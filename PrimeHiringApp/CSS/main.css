@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eff6fa;
+    font-family: 'Mulish';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: rgb(11, 8, 59);
+}

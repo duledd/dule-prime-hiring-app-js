@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #137481;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    background-color: rgb(16, 46, 73);
+}
+.logo {
+    text-align: center;
+    width: 100%;
+    color: beige;
+}
+.logo h2 {
+    padding-left: 10px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul li {
+    background-color: #e1f3fc;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    color: rgb(52, 63, 73);
+}
+li a:hover:not(.active) {
+    background-color: #41a4b1;
+    opacity: 0.5;
+}
+
+a.active {
+   background-color: #137481;
+   color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        width: 100%;
+        align-self: center;
+    }
+    .navigation {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .logo {
+        flex-direction: row;
+        width: 140px;
+    }
+    .logo h2 {
+        align-self: center;
+        padding: 0 20px 0 20px;
+    }
+    .nav {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        
+    }
+    ul li a {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        flex-direction: row;
+        width: 100%;
+        align-self: center;
+    }
+    .navigation {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .logo {
+        flex-direction: row;
+        width: 140px;
+    }
+    .logo h2 {
+        align-self: center;
+        padding: 0 20px 0 20px;
+    }
+    .nav {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding-left: 70px;
+    }
+    .nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    ul li a {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        padding: 20px;
+    }
+}

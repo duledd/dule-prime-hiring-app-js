@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../CSS/main.css">
+    <link type="text/css" rel="stylesheet" href="../CSS/style_header.css">
+    <link type="text/css" rel="stylesheet" href="../CSS/add_New_Dev.css">
+    <link type="text/css" rel="stylesheet" href="../CSS/footer.css">
+    <title>Prime Hiring App</title>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="logo">
+                <h2>PRIME HIRING</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="devop_List.html">Developers List</a></li>
+                    <li><a class="active" href="#">Add New Developer</a></li>
+                    <li><a href="enlisted.html">Hired Developers/Groups</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-add">
+            <p class="headline">Add new developer</p>
+            <form class="form-container" id="form">
+                <div class="error"></div>
+                <label for="Name" id="error">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="number">Phone number:</label>
+                <input type="number" id="number" placeholder="Phone number" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Location" required>
+                <label for="image">Image URL:</label>
+                <input type="text" id="image" placeholder="Image">
+                <label for="price">Price per hour:</label>
+                <input type="number" id="price" placeholder="Price per hour" required>
+                <div class="technology">
+                    <p>Chooze one Technology:</p>
+                    <select id="technology" name="technology">
+                        <option value="javascript">Javascript</option>
+                        <option value="java">Java</option>
+                        <option value="net">.NET</option>
+                        <option value="flutter">Flutter</option>
+                        <option value="python">Python</option>
+                        <option value="php">PHP</option>
+                    </select>
+                </div>
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Description" value="description"></textarea>
+                <div class="experience">
+                    <p>Years of experience</p>
+                    <select id="experience" name="Experience">
+                        <option value="beginner">Beginner 0-2</option>
+                        <option value="intermediate">Intermediate 3-5</option>
+                        <option value="senior">Senior 6-10</option>
+                        <option value="expert">Expert 11+</option>
+                    </select>
+                </div>
+                <div class="native-language">
+                    <p>Native language</p>
+                    <select id="native-language" name="native-language">
+                        <option value="English">English</option>
+                        <option value="Serbian">Serbian</option>
+                        <option value="Bulgarian">Bulgarian</option>
+                    </select>
+                </div>
+                <label for="linkedin">Linkedin profile link:</label>
+                <input type="text" id="linkedin" placeholder="Linkedin profile link">
+                <div class="btn">
+                    <button type="submit" id="postBtn">Save</button>
+                </div>
+              </form>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="../JS/create_Developer.js"></script>
+</body>
+</html>
