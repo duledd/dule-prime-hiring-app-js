@@ -1,1 +1,1 @@
-# dule-prime-hiring-app-js
+# Simple JS hiring App. Just run index file
