@@ -1,1 +1,1 @@
-# Simple JS hiring App. Just run index file
+# Simple JS hiring App. Run index file
