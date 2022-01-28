@@ -1,1 +1,1 @@
-# Simple JS hiring App. Run index file
+# Simple VanillaJS, responsive App. Run index file
